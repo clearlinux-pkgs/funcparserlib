@@ -4,7 +4,7 @@
 #
 Name     : funcparserlib
 Version  : 0.3.6
-Release  : 4
+Release  : 5
 URL      : https://pypi.python.org/packages/source/f/funcparserlib/funcparserlib-0.3.6.tar.gz
 Source0  : https://pypi.python.org/packages/source/f/funcparserlib/funcparserlib-0.3.6.tar.gz
 Summary  : Recursive descent parsing library based on functional combinators
