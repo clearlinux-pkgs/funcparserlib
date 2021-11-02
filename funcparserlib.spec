@@ -4,7 +4,7 @@
 #
 Name     : funcparserlib
 Version  : 0.3.6
-Release  : 31
+Release  : 32
 URL      : https://files.pythonhosted.org/packages/cb/f7/b4a59c3ccf67c0082546eaeb454da1a6610e924d2e7a2a21f337ecae7b40/funcparserlib-0.3.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/cb/f7/b4a59c3ccf67c0082546eaeb454da1a6610e924d2e7a2a21f337ecae7b40/funcparserlib-0.3.6.tar.gz
 Summary  : Recursive descent parsing library based on functional combinators
@@ -14,6 +14,7 @@ Requires: funcparserlib-license = %{version}-%{release}
 Requires: funcparserlib-python = %{version}-%{release}
 Requires: funcparserlib-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+Patch1: deps.patch
 
 %description
 funcparserlib
@@ -50,13 +51,14 @@ python3 components for the funcparserlib package.
 %prep
 %setup -q -n funcparserlib-0.3.6
 cd %{_builddir}/funcparserlib-0.3.6
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603392188
+export SOURCE_DATE_EPOCH=1635882222
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
