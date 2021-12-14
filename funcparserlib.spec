@@ -4,7 +4,7 @@
 #
 Name     : funcparserlib
 Version  : 1.0.0a0
-Release  : 33
+Release  : 34
 URL      : https://github.com/vlasovskikh/funcparserlib/archive/refs/tags/1.0.0a0.tar.gz
 Source0  : https://github.com/vlasovskikh/funcparserlib/archive/refs/tags/1.0.0a0.tar.gz
 Summary  : Recursive descent parsing library based on functional combinators
